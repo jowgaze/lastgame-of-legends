@@ -1,0 +1,15 @@
+.footer-position{
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  .app-footer{
+    background-color: #03223F;
+    color: white;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: end;
+    p{
+      margin: 0;
+    }
+  }
+}
