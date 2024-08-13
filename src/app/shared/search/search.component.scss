@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #03223F;
+  border-radius: 15px;
+
+  .btn-search {
+    margin-left: 8px;
+  }
+
+  mat-icon{
+    color: white;
+  }
+
+  mat-form-field{
+    margin-bottom: -1.25em;
+    mat-label{
+      font-size: small;
+    }
+
+    &.nick{
+      width: 150px;
+    }
+
+    &.tag{
+      width: 75px;
+    }
+  }
+
+}
+
