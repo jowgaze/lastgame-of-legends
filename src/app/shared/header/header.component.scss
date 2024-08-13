@@ -1,0 +1,16 @@
+mat-toolbar {
+  display: flex;
+  justify-content: center;
+  background-color: #03223F;
+  color: white;
+
+  mat-icon {
+    color: white;
+  }
+
+  mat-form-field {
+    .mat-mdc-form-field-bottom-align {
+      height: 0px;
+    }
+  }
+}
