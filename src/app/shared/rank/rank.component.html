@@ -1,0 +1,10 @@
+<div class="queue-rank">
+  <img src="https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/images/{{league.tier.toLowerCase()}}.png" alt="Elo" class="rank-icon">
+  <span class="rank-text"><strong>{{league.tier}}</strong></span>
+  <span class="rank-text"><strong>{{league.rank}}</strong></span>
+  <span class="rank-text win" style="color: green;">{{league.wins}}V</span>
+  <span class="rank-text loss">{{league.losses}}L</span>
+  <span class="rank-text" [ngClass]="wrStatus"><strong>{{wr}}%</strong></span>
+  <span class="rank-text">{{league.leaguePoints}}LP</span>
+  <span class="rank-text">({{queueType}})</span>
+</div>
