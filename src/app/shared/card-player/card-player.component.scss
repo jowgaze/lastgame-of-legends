@@ -1,29 +1,81 @@
 .card {
-  max-width: 400px;
+  max-width: 750px;
+
+  mat-card-header {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
 
   mat-card-subtitle {
     font-weight: 100;
     font-size: small;
   }
 
-  .last-game {
-    background-color: rgba(255, 0, 0, 0.225);
+  mat-card-actions {
+    display: flex;
+    justify-content: end;
+    padding-inline: 16px;
+  }
+
+  .icon-level {
     display: flex;
     justify-content: center;
-    padding: 10px 10px 15px;
+    align-items: end;
+    margin-right: 10px;
+
+    .icon {
+      width: 50px;
+      margin-bottom: 12px;
+      border: 1px solid #03223F;
+      border-radius: 10%;
+    }
+
+    .level {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25px;
+      height: 25px;
+      background-color: #03223F;
+      border-radius: 50%;
+      position: absolute;
+
+      .content {
+        color: white;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .name-tag {
+    margin-right: 10px;
+
+    mat-card-title {
+      text-wrap: nowrap;
+    }
+  }
+
+
+  .last-game {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
     margin-block: 10px;
     border: 1px solid;
     border-radius: 5px;
 
-    legend {
-      display: flex;
-      font-weight: 100;
-      font-size: small;
+    &.win {
+      background-color: rgba(0, 187, 255, 0.225);
+    }
+
+    &.loss {
+      background-color: rgba(255, 0, 0, 0.225);
     }
 
     .image-champion {
       margin: 0;
-      border-radius: 0;
+      border-radius: 10%;
       width: 47px;
       height: 47px;
     }
@@ -45,6 +97,7 @@
 
           .icon-spell {
             width: 20px;
+            border-radius: 10%;
           }
         }
 
@@ -55,31 +108,27 @@
         }
       }
 
-      .more-info{
+      .more-info {
         display: flex;
         flex-direction: column;
         margin-top: -10px;
 
-        .status-player-content{
+        .status-player-content {
           font-size: 10px;
           font-weight: 100;
         }
 
-        .build-player{
+        .build-player {
           display: flex;
           flex-wrap: wrap;
           gap: 2px;
-          .build-item{
+
+          .build-item {
             width: 30px;
+            border-radius: 10%;
           }
         }
       }
     }
-  }
-
-  mat-card-actions{
-    display: flex;
-    justify-content: end;
-    padding-inline: 16px;
   }
 }
