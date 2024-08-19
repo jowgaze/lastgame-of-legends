@@ -8,6 +8,6 @@ export const routes: Routes = [
     path: '', component: HomeComponent
   },
   {
-    path: 'lastgame', component: LastGameComponent
+    path: 'lastgame/:gameName/:tagLine', component: LastGameComponent
   }
 ];

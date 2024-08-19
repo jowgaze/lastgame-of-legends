@@ -13,5 +13,4 @@ import { SearchComponent } from './shared/search/search.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'nhec-league';
 }
