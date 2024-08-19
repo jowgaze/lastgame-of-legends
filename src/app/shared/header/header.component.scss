@@ -4,13 +4,8 @@ mat-toolbar {
   background-color: #03223F;
   color: white;
 
-  mat-icon {
-    color: white;
-  }
-
-  mat-form-field {
-    .mat-mdc-form-field-bottom-align {
-      height: 0px;
-    }
+  .header-image {
+    width: 350px;
+    cursor: pointer;
   }
 }
