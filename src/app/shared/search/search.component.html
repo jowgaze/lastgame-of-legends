@@ -1,12 +1,12 @@
 <form class="container">
   <mat-form-field class="nick">
     <mat-label>Nome</mat-label>
-    <input matInput name="nickname"/>
+    <input matInput name="nameGame" [(ngModel)]="gameName"/>
   </mat-form-field>
   <mat-form-field class="tag">
     <mat-label>Tag</mat-label>
-    <input matInput name="tag"/>
+    <input matInput name="tagLine" [(ngModel)]="tagLine"/>
   </mat-form-field>
 
-  <button mat-icon-button class="btn-search"><mat-icon>search</mat-icon></button>
+  <button mat-icon-button class="btn-search" routerLink="/lastgame/{{gameName}}/{{tagLine}}"><mat-icon>search</mat-icon></button>
 </form>
